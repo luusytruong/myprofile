@@ -30,7 +30,7 @@ body {
 
 .container {
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
     scroll-behavior: smooth;
     height: 932px;
     width: 430px;
@@ -367,6 +367,9 @@ img {
     align-items: center;
 }
 .list-style:hover a{
+    color: #fff;
+}
+.list-style:hover button{
     color: #fff;
 }
 @media screen and (max-width: 768px) {

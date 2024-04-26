@@ -20,7 +20,7 @@ tabs.forEach((tab, index) => {
         setTimeout(() => {
             const widthItem = document.querySelector('.container-wrapper-first').offsetWidth;
             document.getElementById('scroll').scrollLeft += widthItem;
-        }, 300);
+        }, 200);
     }
 });
 
@@ -28,9 +28,9 @@ const closeButtons = document.querySelectorAll('.control-button button');
 
 closeButtons.forEach(button => {
     button.onclick = function(){
+        const widthItem = document.querySelector('.container-wrapper-first').offsetWidth;
+        document.getElementById('scroll').scrollLeft -= widthItem;
         setTimeout(() => {
-            const widthItem = document.querySelector('.container-wrapper-first').offsetWidth;
-            document.getElementById('scroll').scrollLeft -= widthItem;
         }, 100);
     }
 })
