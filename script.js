@@ -1,6 +1,7 @@
 const tabs = document.querySelectorAll('.list-style.nav');
 const contents = document.querySelectorAll('.container-wrapper');
 const mains = document.querySelectorAll('.main');
+const closeButtons = document.querySelectorAll('.control-button button');
 
 tabs.forEach((tab, index) => {
     const content = contents[index];
@@ -17,20 +18,22 @@ tabs.forEach((tab, index) => {
         content.classList.add('active');
         console.log(index)
 
-        setTimeout(() => {
-            const widthItem = document.querySelector('.container-wrapper-first').offsetWidth;
-            document.getElementById('scroll').scrollLeft += widthItem;
-        }, 200);
+
+        document.querySelector('.container-wrapper-first').style.animation = 'slideRight 0.6s ease-in-out forwards';
+        // setTimeout(() => {
+        //         const widthItem = document.querySelector('.container-wrapper-first').offsetWidth;
+        //         document.getElementById('scroll').scrollLeft += widthItem;
+        //     }, 250);
     }
 });
 
-const closeButtons = document.querySelectorAll('.control-button button');
-
 closeButtons.forEach(button => {
-    button.onclick = function(){
-        const widthItem = document.querySelector('.container-wrapper-first').offsetWidth;
-        document.getElementById('scroll').scrollLeft -= widthItem;
-        setTimeout(() => {
-        }, 100);
+    button.onclick = function () {
+        document.querySelector('.container-wrapper-first').style.animation = 'slideLeft 0.6s ease-in-out';
+
+        // const widthItem = document.querySelector('.container-wrapper-first').offsetWidth;
+        // document.getElementById('scroll').scrollLeft -= widthItem;
+        // setTimeout(() => {
+        // }, 250);
     }
 })
