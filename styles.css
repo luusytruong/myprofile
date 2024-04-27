@@ -397,7 +397,9 @@ img {
 
     color: #fff;
 }
-
+.list-style:last-child img{
+    border-radius: 10px;
+}
 .view {
     flex: 1;
     display: flex;
@@ -460,6 +462,58 @@ img {
     color: #fff;
 }
 
+.contact-zalo.active{
+    display: flex;
+}
+.contact-zalo{
+    position: absolute;
+    z-index: 5;
+    display: none;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    /* overflow: hidden; */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contact-zalo button {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: unset;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    transition: all .2s;
+}
+.contact-zalo i {
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-zalo button:hover {
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    color: #000;
+}
+.contact-zalo img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 32px);
+    height: auto;
+    border-radius: 10px;
+}
 @media screen and (max-width: 768px) {
     .control-button button {
         transition: all 0s;

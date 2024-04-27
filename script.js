@@ -2,6 +2,7 @@ const tabs = document.querySelectorAll('.list-style.nav');
 const contents = document.querySelectorAll('.container-wrapper');
 const mains = document.querySelectorAll('.main');
 const closeButtons = document.querySelectorAll('.control-button button');
+const closeContactZalo = document.querySelector('.contact-zalo button');
 
 tabs.forEach((tab, index) => {
     const content = contents[index];
@@ -37,3 +38,13 @@ closeButtons.forEach(button => {
         // }, 250);
     }
 })
+
+document.getElementById('openContactZalo').onclick = function(){
+    document.querySelector('.contact-zalo').classList.add('active');
+}
+closeContactZalo.onclick = function(){
+    document.querySelector('.contact-zalo').classList.remove('active');
+}
+document.querySelector('.contact-zalo').onclick = function(){
+    document.querySelector('.contact-zalo').classList.remove('active');
+}
