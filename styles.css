@@ -281,7 +281,7 @@ img {
 
     background-image: url(./img/wp3006080.jpg);
 
-    animation: color 10s ease infinite;
+    animation: color 3s ease infinite;
 }
 
 @keyframes color {
@@ -322,6 +322,7 @@ img {
     align-items: center;
     height: 21px;
     gap: 5px;
+    white-space: nowrap
 }
 .name img{
     height: 16px;
@@ -374,8 +375,11 @@ img {
     border-radius: 10px;
     transition: all .2s;
     font-weight: 600;
+    white-space: nowrap;
 }
-
+.list-style.nav{
+    border: 1px solid  #99999911;
+}
 .list-style i {
     font-size: 18px;
     width: 40px;
@@ -425,6 +429,7 @@ img {
     text-decoration: none;
     border: unset;
     background: unset;
+    border: 1px solid  #99999911;
 }
 
 .list-style a img,
@@ -485,7 +490,7 @@ img {
     width: 40px;
     border-radius: 50%;
     border: unset;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #aaa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -514,6 +519,19 @@ img {
     height: auto;
     border-radius: 10px;
 }
+#contact a,
+#contact button{
+    position: relative;
+}
+.arrow-up-right{
+    position: absolute;
+    right: 0;
+}
+.arrow-up-right i{
+    margin: 0;
+    /* color: #aaa; */
+}
+
 @media screen and (max-width: 768px) {
     .control-button button {
         transition: all 0s;
