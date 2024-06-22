@@ -77,7 +77,6 @@ html {
         margin-left: -100%;
     }
 }
-
 .container-wrapper-first {
     position: relative;
     background-color: #ffffff05;
@@ -91,6 +90,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    margin: 0%;
     /* animation: slideLeft 1s ease-in-out ;
     animation: slideRight 1s ease-in-out ; */
 }
@@ -275,6 +275,7 @@ img {
     flex-shrink: 0;
     border-radius: 50%;
     padding: 8px;
+    overflow: hidden;
 
     background: linear-gradient(296deg, #000046, #1cb5e0);
     background-size: 400% 800%;
@@ -314,6 +315,19 @@ img {
 
 .name {
     margin-top: 5px;
+    /* font-size: 18px;
+    font-weight: 600;
+    color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21px;
+    gap: 5px;
+    white-space: nowrap
+}
+.name a{
+    /* margin-top: 5px; */
+    text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     color: #fff;
@@ -325,7 +339,7 @@ img {
     white-space: nowrap
 }
 .name img{
-    height: 16px;
+    height: 14px;
 }
 
 .email {
@@ -336,6 +350,7 @@ img {
     align-items: center;
     gap: 5px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
 /* .email span{
@@ -519,8 +534,8 @@ img {
     height: auto;
     border-radius: 10px;
 }
-#contact a,
-#contact button{
+.list-style.contact a,
+.list-style.contact button{
     position: relative;
 }
 .arrow-up-right{

@@ -1,0 +1,244 @@
+img{
+    height: 100px;
+}
+*{
+    font-family: inter;
+    line-height: 1.5;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    /* font-weight: 400; */
+}
+body{
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.container{
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-select{
+    background-image: url(/img/mau-cv-3.png);
+    background-size: cover;
+    width: 1200px;
+    height: 100%;
+    padding: 200px 50px;
+    display: flex;
+}
+.colum{
+    width: 100%;
+}
+.clone{
+    width: 35%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.avatar{
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px #999 solid;
+    margin-bottom: 50px;
+    flex-shrink: 0;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.decription,
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px 0;
+}
+.styles{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+.styles i{
+    font-size: 22px;
+}
+.contact{
+    padding: 20px 0;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+}
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.aboutme h1{
+    font-size: 26px;
+    margin: 20px 0;
+}
+.aboutme p{
+    font-size: 20px;
+    text-align: left;
+}
+
+
+
+.cltwo{
+    width: 65%;
+    padding: 0 0 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+.name h1{
+    font-size: 36px;
+    border-bottom: 1px solid #999;
+}
+.name h2{
+    font-weight: 400;
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+.skills{
+    display: flex;
+    gap: 50px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title h1{
+    font-size: 26px;
+    /* border-bottom: 1px solid #999; */
+}
+.title p{
+    white-space: nowrap
+}
+.process{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.process h1,
+.process p{
+    content: '';
+}
+.process p{
+    height: 27px;
+    background-color: #99999922;
+    max-width: 100%;
+    width: 340px;
+    position: relative;
+}
+.office::before{
+    width: 120px;
+    height: 27px;
+    content: '';
+    background-color: #999;
+    position: absolute;
+}
+.pts::before{
+    width: 250px;
+    height: 27px;
+    content: '';
+    background-color: #999;
+    position: absolute;
+}
+.dev::before{
+    width: 180px;
+    height: 27px;
+    content: '';
+    background-color: #999;
+    position: absolute;
+}
+.talk1::before{
+    width: 250px;
+    height: 27px;
+    content: '';
+    background-color: #999;
+    position: absolute;
+}
+.talk::before{
+    width: 200px;
+    height: 27px;
+    content: '';
+    background-color: #999;
+    position: absolute;
+}
+.work::before{
+    width: 230px;
+    height: 27px;
+    content: '';
+    background-color: #999;
+    position: absolute;
+}
+
+.exp{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.exp p{
+    margin-left: 20px;
+}
+.study,
+.working{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    width: 100%;
+}
+.study h1,
+.working h1{
+    font-size: 26px;
+    border-bottom: 1px solid #999;
+    padding: 30px 0 20px 0;
+}
+.high-school,
+.university{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.high-school h2:first-child{
+    font-size: 22px;
+}
+.university h2:first-child{
+    font-size: 22px;
+    margin-top: 20px;
+}
+.working div h2{
+    font-size: 22px;
+}
+.working div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
